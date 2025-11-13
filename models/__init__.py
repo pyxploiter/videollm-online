@@ -1,7 +1,7 @@
 from transformers import HfArgumentParser
 
 from .arguments_live import LiveTrainingArguments, get_args_class
-from .live_mistral import build_live_mistral as build_model_and_tokenizer
+from .live_qwen import build_live_qwen as build_model_and_tokenizer
 from .modeling_live import fast_greedy_generate
 
 

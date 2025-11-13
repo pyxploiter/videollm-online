@@ -11,7 +11,7 @@ class LiveTrainingArguments(TrainingArguments):
     train_datasets: list[str] = None
     eval_datasets: list[str] = None
     stream_loss_weight: float = 1.0
-    llm_pretrained: str = 'mistralai/Mistral-7B-Instruct-v0.3'
+    llm_pretrained: str = 'Qwen/Qwen1.5-0.5B-Chat'
     vision_pretrained: str = 'google/siglip-large-patch16-384'
     lora_modules: str = "model.*(q_proj|k_proj|v_proj|o_proj|gate_proj|up_proj|down_proj)|lm_head$"
     lora_r: int = 128
